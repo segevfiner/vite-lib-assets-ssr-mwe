@@ -1,0 +1,12 @@
+{
+    "extends": "@tsconfig/node18/tsconfig.json",
+    "include": ["src/**/*"],
+    "compilerOptions": {
+        "rootDir": "src",
+        "outDir": "dist",
+        "module": "ES2022",
+        "moduleResolution": "bundler",
+        "noEmit": true,
+        "types": ["node"]
+    }
+}
