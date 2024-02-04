@@ -7,11 +7,13 @@
   "main": "./dist/foo.js",
   "exports": {
     "types": "./dist/foo.d.ts",
-    "import": "./dist/foo.js"
+    "import": "./dist/foo.js",
+    "require": "./dist/foo.cjs"
   },
   "scripts": {
     "dev": "vite",
     "build": "run-p type-check \"build-only {@}\" --",
+    "build:ssr": "run-p type-check \"build-only --ssr --outDir dist-ssr {@}\" --",
     "preview": "vite preview",
     "test:unit": "vitest",
     "build-only": "vite build",
